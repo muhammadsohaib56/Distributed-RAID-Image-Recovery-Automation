@@ -1,0 +1,88 @@
+version: '3.8'
+
+services:
+  master:
+    build:
+      context: ./node
+    container_name: master
+    command: /usr/bin/supervisord -n
+    ports:
+      - "2222:22"
+    volumes:
+      - ./data:/data
+
+  slave1:
+    build:
+      context: ./node
+    container_name: slave1
+    command: /usr/bin/supervisord -n
+    ports:
+      - "2223:22"
+    volumes:
+      - ./data:/data
+
+  slave2:
+    build:
+      context: ./node
+    container_name: slave2
+    command: /usr/bin/supervisord -n
+    ports:
+      - "2224:22"
+    volumes:
+      - ./data:/data
+
+  slave3:
+    build:
+      context: ./node
+    container_name: slave3
+    command: /usr/bin/supervisord -n
+    ports:
+      - "2225:22"
+    volumes:
+      - ./data:/data
+
+  slave4:
+    build:
+      context: ./node
+    container_name: slave4
+    command: /usr/bin/supervisord -n
+    ports:
+      - "2226:22"
+    volumes:
+      - ./data:/data
+
+  slave5:
+    build:
+      context: ./node
+    container_name: slave5
+    command: /usr/bin/supervisord -n
+    ports:
+      - "2227:22"
+    volumes:
+      - ./data:/data
+
+  sensu-backend:
+    image: sensu/sensu:latest
+    container_name: sensu-backend
+    command: sensu-backend start
+    ports:
+      - "8080:8080"   # Sensu API
+      - "3000:3000"   # Sensu Web UI
+    environment:
+      - SENSU_BACKEND_CLUSTER_ADMIN_USERNAME=admin
+      - SENSU_BACKEND_CLUSTER_ADMIN_PASSWORD=secret
+    volumes:
+      - sensu-backend-data:/var/lib/sensu
+
+  sensu-agent:
+    image: sensu/sensu:latest
+    container_name: sensu-agent
+    depends_on:
+      - sensu-backend
+    command: sensu-agent start --backend-url ws://sensu-backend:8081
+    volumes:
+      - sensu-agent-data:/var/lib/sensu
+
+volumes:
+  sensu-backend-data:
+  sensu-agent-data:

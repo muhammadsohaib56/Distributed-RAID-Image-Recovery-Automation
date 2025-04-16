@@ -1,0 +1,522 @@
+2025-04-11 14:22:25,764 INFO: Logging system initialized with console and file handlers
+2025-04-11 14:22:25,764 INFO: ==== Starting application ====
+2025-04-11 14:22:25,764 INFO: ==== SIMULATING NODE SHUTDOWN ====
+2025-04-11 14:22:25,764 INFO: Initiating simulated shutdown for node localhost:2223
+2025-04-11 14:22:25,764 DEBUG: Executing shutdown simulation command: echo 'Simulated shutdown: Node will restart in 10 seconds'; sleep 10; echo 'Node restarted'
+2025-04-11 14:22:25,764 DEBUG: Attempting SSH connection to localhost:2223 with command: echo 'Simulated shutdown: Node will restart in 10 seconds'; sleep 10; echo 'Node restarted'
+2025-04-11 14:22:25,764 DEBUG: Connecting to localhost:2223 as root
+2025-04-11 14:22:25,786 DEBUG: starting thread (client mode): 0x7fcc4a00
+2025-04-11 14:22:25,786 DEBUG: Local version/idstring: SSH-2.0-paramiko_3.5.1
+2025-04-11 14:22:25,797 DEBUG: Remote version/idstring: SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.12
+2025-04-11 14:22:25,797 INFO: Connected (version 2.0, client OpenSSH_8.2p1)
+2025-04-11 14:22:25,804 DEBUG: === Key exchange possibilities ===
+2025-04-11 14:22:25,804 DEBUG: kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256, kex-strict-s-v00@openssh.com
+2025-04-11 14:22:25,804 DEBUG: server key: rsa-sha2-512, rsa-sha2-256, ssh-rsa, ecdsa-sha2-nistp256, ssh-ed25519
+2025-04-11 14:22:25,804 DEBUG: client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-04-11 14:22:25,804 DEBUG: server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-04-11 14:22:25,804 DEBUG: client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-04-11 14:22:25,804 DEBUG: server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-04-11 14:22:25,804 DEBUG: client compress: none, zlib@openssh.com
+2025-04-11 14:22:25,804 DEBUG: server compress: none, zlib@openssh.com
+2025-04-11 14:22:25,804 DEBUG: client lang: <none>
+2025-04-11 14:22:25,804 DEBUG: server lang: <none>
+2025-04-11 14:22:25,804 DEBUG: kex follows: False
+2025-04-11 14:22:25,804 DEBUG: === Key exchange agreements ===
+2025-04-11 14:22:25,804 DEBUG: Strict kex mode: True
+2025-04-11 14:22:25,804 DEBUG: Kex: curve25519-sha256@libssh.org
+2025-04-11 14:22:25,804 DEBUG: HostKey: ssh-ed25519
+2025-04-11 14:22:25,804 DEBUG: Cipher: aes128-ctr
+2025-04-11 14:22:25,804 DEBUG: MAC: hmac-sha2-256
+2025-04-11 14:22:25,804 DEBUG: Compression: none
+2025-04-11 14:22:25,804 DEBUG: === End of kex handshake ===
+2025-04-11 14:22:25,822 DEBUG: Resetting outbound seqno after NEWKEYS due to strict mode
+2025-04-11 14:22:25,822 DEBUG: kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2025-04-11 14:22:25,822 DEBUG: Switch to new keys ...
+2025-04-11 14:22:25,822 DEBUG: Resetting inbound seqno after NEWKEYS due to strict mode
+2025-04-11 14:22:25,822 DEBUG: Adding ssh-ed25519 host key for [localhost]:2223: b'71eda3eb3f303a0501a7cb05e96c9ede'
+2025-04-11 14:22:25,822 DEBUG: Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com'}
+2025-04-11 14:22:25,869 DEBUG: userauth is OK
+2025-04-11 14:22:25,906 INFO: Authentication (password) successful!
+2025-04-11 14:22:25,914 INFO: SSH connection established to localhost:2223
+2025-04-11 14:22:25,915 DEBUG: [chan 0] Max packet in: 32768 bytes
+2025-04-11 14:22:25,946 DEBUG: Received global request "hostkeys-00@openssh.com"
+2025-04-11 14:22:25,946 DEBUG: Rejecting "hostkeys-00@openssh.com" global request from server.
+2025-04-11 14:22:25,993 DEBUG: [chan 0] Max packet out: 32768 bytes
+2025-04-11 14:22:25,993 DEBUG: Secsh channel 0 opened.
+2025-04-11 14:22:25,993 DEBUG: [chan 0] Sesch channel 0 request ok
+2025-04-11 14:22:36,018 DEBUG: [chan 0] EOF received (0)
+2025-04-11 14:22:36,018 DEBUG: SSH command executed, processing output
+2025-04-11 14:22:36,018 DEBUG: [chan 0] EOF sent (0)
+2025-04-11 14:22:36,018 INFO: Output from localhost:2223 -> Simulated shutdown: Node will restart in 10 seconds
+Node restarted
+2025-04-11 14:22:36,018 DEBUG: EOF in transport thread
+2025-04-11 14:22:36,018 DEBUG: SSH connection to localhost:2223 closed
+2025-04-11 14:22:36,018 INFO: Shutdown simulation completed for localhost:2223
+2025-04-11 14:22:36,018 INFO: Shutdown simulation output:
+Simulated shutdown: Node will restart in 10 seconds
+Node restarted
+
+2025-04-11 14:22:36,018 INFO: Waiting 15 seconds to simulate node downtime and dashboard update...
+2025-04-11 14:22:51,042 INFO: Resuming after simulated downtime
+2025-04-11 14:22:51,042 INFO: ==== PROCESSING IMAGE FOLDERS ====
+2025-04-11 14:22:51,042 INFO: Processing image folders in data
+2025-04-11 14:22:51,042 DEBUG: use_alt_raid6 parameter: True
+2025-04-11 14:22:51,042 DEBUG: Processing folder: data\train
+2025-04-11 14:22:51,061 INFO: Processing image 'data\train\IMG-20221027-WA0002_jpg.rf.ee8f211bc5de9e5656c2ec0b450e8d03.jpg' in folder 'train'
+2025-04-11 14:22:51,065 INFO: Starting failure simulation for image: data\train\IMG-20221027-WA0002_jpg.rf.ee8f211bc5de9e5656c2ec0b450e8d03.jpg
+2025-04-11 14:22:51,069 DEBUG: Parameters - failed_segment: R2, output_folder: output, use_alt_raid6: True
+2025-04-11 14:22:51,069 INFO: Processing image: data\train\IMG-20221027-WA0002_jpg.rf.ee8f211bc5de9e5656c2ec0b450e8d03.jpg
+2025-04-11 14:22:51,135 DEBUG: Original image dimensions: 640x640x3
+2025-04-11 14:22:51,135 DEBUG: Calculated segment width: 213
+2025-04-11 14:22:51,135 INFO: Successfully split image into three segments (width=213).
+2025-04-11 14:22:51,135 DEBUG: Segment shapes - R1: (640, 213, 3), R2: (640, 213, 3), R3: (640, 213, 3)
+2025-04-11 14:22:51,135 INFO: Computing parity data
+2025-04-11 14:22:51,135 DEBUG: Computing RAID5 parity (R1 + R2 + R3 mod 256)
+2025-04-11 14:22:51,154 DEBUG: Computing alternate RAID6 parity (R1 + R2 - R3 mod 256)
+2025-04-11 14:22:51,167 INFO: Selected recovery method: RAID6-alt (R1+R2-R3)
+2025-04-11 14:22:51,172 DEBUG: Simulating failure of segment R2
+2025-04-11 14:22:51,172 DEBUG: Available segments: (640, 213, 3), (640, 213, 3)
+2025-04-11 14:22:51,174 DEBUG: Using alternate RAID6 recovery formula
+2025-04-11 14:22:51,182 INFO: Successfully recovered missing segment R2 using RAID6-alt (R1+R2-R3)
+2025-04-11 14:22:51,184 DEBUG: Reconstructed image shape: (640, 639, 3)
+2025-04-11 14:22:51,211 INFO: Successfully saved reconstructed image to 'output\recovered_IMG-20221027-WA0002_jpg.rf.ee8f211bc5de9e5656c2ec0b450e8d03.jpg'
+2025-04-11 14:22:51,211 DEBUG: Processing folder: data\test
+2025-04-11 14:22:51,227 INFO: Processing image 'data\test\IMG-20221027-WA0001_jpg.rf.0b3ddb492c8d06e68d261d227960f77e.jpg' in folder 'test'
+2025-04-11 14:22:51,235 INFO: Starting failure simulation for image: data\test\IMG-20221027-WA0001_jpg.rf.0b3ddb492c8d06e68d261d227960f77e.jpg
+2025-04-11 14:22:51,235 DEBUG: Parameters - failed_segment: R2, output_folder: output, use_alt_raid6: True
+2025-04-11 14:22:51,235 INFO: Processing image: data\test\IMG-20221027-WA0001_jpg.rf.0b3ddb492c8d06e68d261d227960f77e.jpg
+2025-04-11 14:22:51,255 DEBUG: Original image dimensions: 640x640x3
+2025-04-11 14:22:51,255 DEBUG: Calculated segment width: 213
+2025-04-11 14:22:51,255 INFO: Successfully split image into three segments (width=213).
+2025-04-11 14:22:51,255 DEBUG: Segment shapes - R1: (640, 213, 3), R2: (640, 213, 3), R3: (640, 213, 3)
+2025-04-11 14:22:51,255 INFO: Computing parity data
+2025-04-11 14:22:51,255 DEBUG: Computing RAID5 parity (R1 + R2 + R3 mod 256)
+2025-04-11 14:22:51,255 DEBUG: Computing alternate RAID6 parity (R1 + R2 - R3 mod 256)
+2025-04-11 14:22:51,279 INFO: Selected recovery method: RAID6-alt (R1+R2-R3)
+2025-04-11 14:22:51,279 DEBUG: Simulating failure of segment R2
+2025-04-11 14:22:51,279 DEBUG: Available segments: (640, 213, 3), (640, 213, 3)
+2025-04-11 14:22:51,279 DEBUG: Using alternate RAID6 recovery formula
+2025-04-11 14:22:51,288 INFO: Successfully recovered missing segment R2 using RAID6-alt (R1+R2-R3)
+2025-04-11 14:22:51,288 DEBUG: Reconstructed image shape: (640, 639, 3)
+2025-04-11 14:22:51,406 INFO: Successfully saved reconstructed image to 'output\recovered_IMG-20221027-WA0001_jpg.rf.0b3ddb492c8d06e68d261d227960f77e.jpg'
+2025-04-11 14:22:51,406 DEBUG: Processing folder: data\valid
+2025-04-11 14:22:51,421 INFO: Processing image 'data\valid\IMG-20221027-WA0000_jpg.rf.8d1820185d4e1c170511cef3bd2a0a4f.jpg' in folder 'valid'
+2025-04-11 14:22:51,421 INFO: Starting failure simulation for image: data\valid\IMG-20221027-WA0000_jpg.rf.8d1820185d4e1c170511cef3bd2a0a4f.jpg
+2025-04-11 14:22:51,421 DEBUG: Parameters - failed_segment: R2, output_folder: output, use_alt_raid6: True
+2025-04-11 14:22:51,421 INFO: Processing image: data\valid\IMG-20221027-WA0000_jpg.rf.8d1820185d4e1c170511cef3bd2a0a4f.jpg
+2025-04-11 14:22:51,427 DEBUG: Original image dimensions: 640x640x3
+2025-04-11 14:22:51,427 DEBUG: Calculated segment width: 213
+2025-04-11 14:22:51,427 INFO: Successfully split image into three segments (width=213).
+2025-04-11 14:22:51,450 DEBUG: Segment shapes - R1: (640, 213, 3), R2: (640, 213, 3), R3: (640, 213, 3)
+2025-04-11 14:22:51,450 INFO: Computing parity data
+2025-04-11 14:22:51,458 DEBUG: Computing RAID5 parity (R1 + R2 + R3 mod 256)
+2025-04-11 14:22:51,467 DEBUG: Computing alternate RAID6 parity (R1 + R2 - R3 mod 256)
+2025-04-11 14:22:51,475 INFO: Selected recovery method: RAID6-alt (R1+R2-R3)
+2025-04-11 14:22:51,475 DEBUG: Simulating failure of segment R2
+2025-04-11 14:22:51,475 DEBUG: Available segments: (640, 213, 3), (640, 213, 3)
+2025-04-11 14:22:51,475 DEBUG: Using alternate RAID6 recovery formula
+2025-04-11 14:22:51,487 INFO: Successfully recovered missing segment R2 using RAID6-alt (R1+R2-R3)
+2025-04-11 14:22:51,487 DEBUG: Reconstructed image shape: (640, 639, 3)
+2025-04-11 14:22:51,505 INFO: Successfully saved reconstructed image to 'output\recovered_IMG-20221027-WA0000_jpg.rf.8d1820185d4e1c170511cef3bd2a0a4f.jpg'
+2025-04-11 14:22:51,505 INFO: ==== Application completed successfully ====
+2025-04-11 14:27:50,146 INFO: Logging system initialized with console and file handlers
+2025-04-11 14:27:50,146 INFO: ==== Starting application ====
+2025-04-11 14:27:50,146 DEBUG: Starting new HTTP connection (1): localhost:8080
+2025-04-11 14:27:50,156 DEBUG: http://localhost:8080 "POST /api/core/v2/namespaces/default/events HTTP/1.1" 401 38
+2025-04-11 14:27:50,164 DEBUG: Sensu API response: 401 - {"Code":5,"Message":"bad credentials"}
+2025-04-11 14:27:50,164 ERROR: Failed to send Sensu event: 401 - {"Code":5,"Message":"bad credentials"}
+2025-04-11 14:27:50,164 INFO: ==== SIMULATING NODE SHUTDOWN ====
+2025-04-11 14:27:50,164 INFO: Initiating simulated shutdown for node localhost:2223
+2025-04-11 14:27:50,164 DEBUG: Starting new HTTP connection (1): localhost:8080
+2025-04-11 14:27:50,173 DEBUG: http://localhost:8080 "POST /api/core/v2/namespaces/default/events HTTP/1.1" 401 38
+2025-04-11 14:27:50,173 DEBUG: Sensu API response: 401 - {"Code":5,"Message":"bad credentials"}
+2025-04-11 14:27:50,173 ERROR: Failed to send Sensu event: 401 - {"Code":5,"Message":"bad credentials"}
+2025-04-11 14:27:50,173 DEBUG: Executing shutdown simulation command: echo 'Simulated shutdown: Node will restart in 10 seconds'; sleep 10; echo 'Node restarted'
+2025-04-11 14:27:50,173 DEBUG: Attempting SSH connection to localhost:2223 with command: echo 'Simulated shutdown: Node will restart in 10 seconds'; sleep 10; echo 'Node restarted'
+2025-04-11 14:27:50,173 DEBUG: Connecting to localhost:2223 as root
+2025-04-11 14:27:50,182 DEBUG: starting thread (client mode): 0x358cb100
+2025-04-11 14:27:50,182 DEBUG: Local version/idstring: SSH-2.0-paramiko_3.5.1
+2025-04-11 14:27:50,190 DEBUG: Remote version/idstring: SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.12
+2025-04-11 14:27:50,190 INFO: Connected (version 2.0, client OpenSSH_8.2p1)
+2025-04-11 14:27:50,197 DEBUG: === Key exchange possibilities ===
+2025-04-11 14:27:50,197 DEBUG: kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256, kex-strict-s-v00@openssh.com
+2025-04-11 14:27:50,197 DEBUG: server key: rsa-sha2-512, rsa-sha2-256, ssh-rsa, ecdsa-sha2-nistp256, ssh-ed25519
+2025-04-11 14:27:50,197 DEBUG: client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-04-11 14:27:50,197 DEBUG: server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-04-11 14:27:50,197 DEBUG: client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-04-11 14:27:50,197 DEBUG: server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-04-11 14:27:50,197 DEBUG: client compress: none, zlib@openssh.com
+2025-04-11 14:27:50,197 DEBUG: server compress: none, zlib@openssh.com
+2025-04-11 14:27:50,197 DEBUG: client lang: <none>
+2025-04-11 14:27:50,197 DEBUG: server lang: <none>
+2025-04-11 14:27:50,197 DEBUG: kex follows: False
+2025-04-11 14:27:50,197 DEBUG: === Key exchange agreements ===
+2025-04-11 14:27:50,197 DEBUG: Strict kex mode: True
+2025-04-11 14:27:50,197 DEBUG: Kex: curve25519-sha256@libssh.org
+2025-04-11 14:27:50,197 DEBUG: HostKey: ssh-ed25519
+2025-04-11 14:27:50,197 DEBUG: Cipher: aes128-ctr
+2025-04-11 14:27:50,197 DEBUG: MAC: hmac-sha2-256
+2025-04-11 14:27:50,197 DEBUG: Compression: none
+2025-04-11 14:27:50,197 DEBUG: === End of kex handshake ===
+2025-04-11 14:27:50,262 DEBUG: Resetting outbound seqno after NEWKEYS due to strict mode
+2025-04-11 14:27:50,262 DEBUG: kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2025-04-11 14:27:50,262 DEBUG: Switch to new keys ...
+2025-04-11 14:27:50,262 DEBUG: Resetting inbound seqno after NEWKEYS due to strict mode
+2025-04-11 14:27:50,262 DEBUG: Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com'}
+2025-04-11 14:27:50,262 DEBUG: Adding ssh-ed25519 host key for [localhost]:2223: b'71eda3eb3f303a0501a7cb05e96c9ede'
+2025-04-11 14:27:50,307 DEBUG: userauth is OK
+2025-04-11 14:27:50,346 INFO: Authentication (password) successful!
+2025-04-11 14:27:50,346 INFO: SSH connection established to localhost:2223 in 0.17s
+2025-04-11 14:27:50,346 DEBUG: Starting new HTTP connection (1): localhost:8080
+2025-04-11 14:27:50,375 DEBUG: http://localhost:8080 "POST /api/core/v2/namespaces/default/events HTTP/1.1" 401 38
+2025-04-11 14:27:50,375 DEBUG: Sensu API response: 401 - {"Code":5,"Message":"bad credentials"}
+2025-04-11 14:27:50,379 ERROR: Failed to send Sensu event: 401 - {"Code":5,"Message":"bad credentials"}
+2025-04-11 14:27:50,379 DEBUG: [chan 0] Max packet in: 32768 bytes
+2025-04-11 14:27:50,386 DEBUG: Received global request "hostkeys-00@openssh.com"
+2025-04-11 14:27:50,386 DEBUG: Rejecting "hostkeys-00@openssh.com" global request from server.
+2025-04-11 14:27:50,425 DEBUG: [chan 0] Max packet out: 32768 bytes
+2025-04-11 14:27:50,425 DEBUG: Secsh channel 0 opened.
+2025-04-11 14:27:50,437 DEBUG: [chan 0] Sesch channel 0 request ok
+2025-04-11 14:28:00,441 DEBUG: [chan 0] EOF received (0)
+2025-04-11 14:28:00,441 DEBUG: SSH command executed, processing output
+2025-04-11 14:28:00,441 DEBUG: [chan 0] EOF sent (0)
+2025-04-11 14:28:00,441 INFO: Output from localhost:2223 -> Simulated shutdown: Node will restart in 10 seconds
+Node restarted
+2025-04-11 14:28:00,441 DEBUG: EOF in transport thread
+2025-04-11 14:28:00,458 DEBUG: SSH connection to localhost:2223 closed
+2025-04-11 14:28:00,460 INFO: Shutdown simulation completed for localhost:2223
+2025-04-11 14:28:00,476 DEBUG: Starting new HTTP connection (1): localhost:8080
+2025-04-11 14:28:00,491 DEBUG: http://localhost:8080 "POST /api/core/v2/namespaces/default/events HTTP/1.1" 401 38
+2025-04-11 14:28:00,491 DEBUG: Sensu API response: 401 - {"Code":5,"Message":"bad credentials"}
+2025-04-11 14:28:00,494 ERROR: Failed to send Sensu event: 401 - {"Code":5,"Message":"bad credentials"}
+2025-04-11 14:28:00,494 INFO: Shutdown simulation output:
+Simulated shutdown: Node will restart in 10 seconds
+Node restarted
+
+2025-04-11 14:28:00,494 INFO: Waiting 15 seconds to simulate node downtime...
+2025-04-11 14:28:00,502 DEBUG: Starting new HTTP connection (1): localhost:8080
+2025-04-11 14:28:00,510 DEBUG: http://localhost:8080 "POST /api/core/v2/namespaces/default/events HTTP/1.1" 401 38
+2025-04-11 14:28:00,510 DEBUG: Sensu API response: 401 - {"Code":5,"Message":"bad credentials"}
+2025-04-11 14:28:00,510 ERROR: Failed to send Sensu event: 401 - {"Code":5,"Message":"bad credentials"}
+2025-04-11 14:28:15,523 INFO: Resuming after simulated downtime
+2025-04-11 14:28:15,524 INFO: ==== PROCESSING IMAGE FOLDERS ====
+2025-04-11 14:28:15,524 INFO: Processing image folders in data
+2025-04-11 14:28:15,524 DEBUG: Starting new HTTP connection (1): localhost:8080
+2025-04-11 14:28:15,539 DEBUG: http://localhost:8080 "POST /api/core/v2/namespaces/default/events HTTP/1.1" 401 38
+2025-04-11 14:28:15,539 DEBUG: Sensu API response: 401 - {"Code":5,"Message":"bad credentials"}
+2025-04-11 14:28:15,539 ERROR: Failed to send Sensu event: 401 - {"Code":5,"Message":"bad credentials"}
+2025-04-11 14:28:15,544 DEBUG: Processing folder: data\train
+2025-04-11 14:28:15,557 INFO: Processing image 'data\train\IMG-20221027-WA0002_jpg.rf.ee8f211bc5de9e5656c2ec0b450e8d03.jpg' in folder 'train'
+2025-04-11 14:28:15,557 INFO: Starting failure simulation for image: data\train\IMG-20221027-WA0002_jpg.rf.ee8f211bc5de9e5656c2ec0b450e8d03.jpg
+2025-04-11 14:28:15,570 DEBUG: Starting new HTTP connection (1): localhost:8080
+2025-04-11 14:28:15,575 DEBUG: http://localhost:8080 "POST /api/core/v2/namespaces/default/events HTTP/1.1" 401 38
+2025-04-11 14:28:15,575 DEBUG: Sensu API response: 401 - {"Code":5,"Message":"bad credentials"}
+2025-04-11 14:28:15,575 ERROR: Failed to send Sensu event: 401 - {"Code":5,"Message":"bad credentials"}
+2025-04-11 14:28:15,575 ERROR: RAID recovery failed for data\train\IMG-20221027-WA0002_jpg.rf.ee8f211bc5de9e5656c2ec0b450e8d03.jpg: name 'reconstructed' is not defined
+2025-04-11 14:28:15,587 DEBUG: Starting new HTTP connection (1): localhost:8080
+2025-04-11 14:28:15,587 DEBUG: http://localhost:8080 "POST /api/core/v2/namespaces/default/events HTTP/1.1" 401 38
+2025-04-11 14:28:15,587 DEBUG: Sensu API response: 401 - {"Code":5,"Message":"bad credentials"}
+2025-04-11 14:28:15,587 ERROR: Failed to send Sensu event: 401 - {"Code":5,"Message":"bad credentials"}
+2025-04-11 14:28:15,587 ERROR: Failed to process image data\train\IMG-20221027-WA0002_jpg.rf.ee8f211bc5de9e5656c2ec0b450e8d03.jpg: name 'reconstructed' is not defined
+2025-04-11 14:28:15,587 DEBUG: Processing folder: data\test
+2025-04-11 14:28:15,614 INFO: Processing image 'data\test\IMG-20221027-WA0001_jpg.rf.0b3ddb492c8d06e68d261d227960f77e.jpg' in folder 'test'
+2025-04-11 14:28:15,614 INFO: Starting failure simulation for image: data\test\IMG-20221027-WA0001_jpg.rf.0b3ddb492c8d06e68d261d227960f77e.jpg
+2025-04-11 14:28:15,618 DEBUG: Starting new HTTP connection (1): localhost:8080
+2025-04-11 14:28:15,620 DEBUG: http://localhost:8080 "POST /api/core/v2/namespaces/default/events HTTP/1.1" 401 38
+2025-04-11 14:28:15,620 DEBUG: Sensu API response: 401 - {"Code":5,"Message":"bad credentials"}
+2025-04-11 14:28:15,620 ERROR: Failed to send Sensu event: 401 - {"Code":5,"Message":"bad credentials"}
+2025-04-11 14:28:15,620 ERROR: RAID recovery failed for data\test\IMG-20221027-WA0001_jpg.rf.0b3ddb492c8d06e68d261d227960f77e.jpg: name 'reconstructed' is not defined
+2025-04-11 14:28:15,630 DEBUG: Starting new HTTP connection (1): localhost:8080
+2025-04-11 14:28:15,637 DEBUG: http://localhost:8080 "POST /api/core/v2/namespaces/default/events HTTP/1.1" 401 38
+2025-04-11 14:28:15,639 DEBUG: Sensu API response: 401 - {"Code":5,"Message":"bad credentials"}
+2025-04-11 14:28:15,639 ERROR: Failed to send Sensu event: 401 - {"Code":5,"Message":"bad credentials"}
+2025-04-11 14:28:15,642 ERROR: Failed to process image data\test\IMG-20221027-WA0001_jpg.rf.0b3ddb492c8d06e68d261d227960f77e.jpg: name 'reconstructed' is not defined
+2025-04-11 14:28:15,645 DEBUG: Processing folder: data\valid
+2025-04-11 14:28:15,648 INFO: Processing image 'data\valid\IMG-20221027-WA0000_jpg.rf.8d1820185d4e1c170511cef3bd2a0a4f.jpg' in folder 'valid'
+2025-04-11 14:28:15,649 INFO: Starting failure simulation for image: data\valid\IMG-20221027-WA0000_jpg.rf.8d1820185d4e1c170511cef3bd2a0a4f.jpg
+2025-04-11 14:28:15,655 DEBUG: Starting new HTTP connection (1): localhost:8080
+2025-04-11 14:28:15,655 DEBUG: http://localhost:8080 "POST /api/core/v2/namespaces/default/events HTTP/1.1" 401 38
+2025-04-11 14:28:15,663 DEBUG: Sensu API response: 401 - {"Code":5,"Message":"bad credentials"}
+2025-04-11 14:28:15,663 ERROR: Failed to send Sensu event: 401 - {"Code":5,"Message":"bad credentials"}
+2025-04-11 14:28:15,663 ERROR: RAID recovery failed for data\valid\IMG-20221027-WA0000_jpg.rf.8d1820185d4e1c170511cef3bd2a0a4f.jpg: name 'reconstructed' is not defined
+2025-04-11 14:28:15,663 DEBUG: Starting new HTTP connection (1): localhost:8080
+2025-04-11 14:28:15,671 DEBUG: http://localhost:8080 "POST /api/core/v2/namespaces/default/events HTTP/1.1" 401 38
+2025-04-11 14:28:15,671 DEBUG: Sensu API response: 401 - {"Code":5,"Message":"bad credentials"}
+2025-04-11 14:28:15,671 ERROR: Failed to send Sensu event: 401 - {"Code":5,"Message":"bad credentials"}
+2025-04-11 14:28:15,671 ERROR: Failed to process image data\valid\IMG-20221027-WA0000_jpg.rf.8d1820185d4e1c170511cef3bd2a0a4f.jpg: name 'reconstructed' is not defined
+2025-04-11 14:28:15,679 DEBUG: Starting new HTTP connection (1): localhost:8080
+2025-04-11 14:28:15,689 DEBUG: http://localhost:8080 "POST /api/core/v2/namespaces/default/events HTTP/1.1" 401 38
+2025-04-11 14:28:15,697 DEBUG: Sensu API response: 401 - {"Code":5,"Message":"bad credentials"}
+2025-04-11 14:28:15,697 ERROR: Failed to send Sensu event: 401 - {"Code":5,"Message":"bad credentials"}
+2025-04-11 14:28:15,697 INFO: ==== Application completed successfully ====
+2025-04-11 14:28:15,704 DEBUG: Starting new HTTP connection (1): localhost:8080
+2025-04-11 14:28:15,713 DEBUG: http://localhost:8080 "POST /api/core/v2/namespaces/default/events HTTP/1.1" 401 38
+2025-04-11 14:28:15,713 DEBUG: Sensu API response: 401 - {"Code":5,"Message":"bad credentials"}
+2025-04-11 14:28:15,713 ERROR: Failed to send Sensu event: 401 - {"Code":5,"Message":"bad credentials"}
+2025-04-11 14:28:21,028 INFO: Logging system initialized with console and file handlers
+2025-04-11 14:28:21,029 INFO: ==== Starting application ====
+2025-04-11 14:28:21,030 INFO: ==== SIMULATING NODE SHUTDOWN ====
+2025-04-11 14:28:21,031 INFO: Initiating simulated shutdown for node localhost:2223
+2025-04-11 14:28:21,031 DEBUG: Executing shutdown simulation command: echo 'Simulated shutdown: Node will restart in 10 seconds'; sleep 10; echo 'Node restarted'
+2025-04-11 14:28:21,031 DEBUG: Attempting SSH connection to localhost:2223 with command: echo 'Simulated shutdown: Node will restart in 10 seconds'; sleep 10; echo 'Node restarted'
+2025-04-11 14:28:21,031 DEBUG: Connecting to localhost:2223 as root
+2025-04-11 14:28:21,052 DEBUG: starting thread (client mode): 0x32cb4a00
+2025-04-11 14:28:21,053 DEBUG: Local version/idstring: SSH-2.0-paramiko_3.5.1
+2025-04-11 14:28:21,070 DEBUG: Remote version/idstring: SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.12
+2025-04-11 14:28:21,070 INFO: Connected (version 2.0, client OpenSSH_8.2p1)
+2025-04-11 14:28:21,084 DEBUG: === Key exchange possibilities ===
+2025-04-11 14:28:21,084 DEBUG: kex algos: curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256, kex-strict-s-v00@openssh.com
+2025-04-11 14:28:21,084 DEBUG: server key: rsa-sha2-512, rsa-sha2-256, ssh-rsa, ecdsa-sha2-nistp256, ssh-ed25519
+2025-04-11 14:28:21,084 DEBUG: client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-04-11 14:28:21,086 DEBUG: server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-04-11 14:28:21,086 DEBUG: client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-04-11 14:28:21,086 DEBUG: server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-04-11 14:28:21,086 DEBUG: client compress: none, zlib@openssh.com
+2025-04-11 14:28:21,086 DEBUG: server compress: none, zlib@openssh.com
+2025-04-11 14:28:21,086 DEBUG: client lang: <none>
+2025-04-11 14:28:21,086 DEBUG: server lang: <none>
+2025-04-11 14:28:21,086 DEBUG: kex follows: False
+2025-04-11 14:28:21,086 DEBUG: === Key exchange agreements ===
+2025-04-11 14:28:21,086 DEBUG: Strict kex mode: True
+2025-04-11 14:28:21,086 DEBUG: Kex: curve25519-sha256@libssh.org
+2025-04-11 14:28:21,086 DEBUG: HostKey: ssh-ed25519
+2025-04-11 14:28:21,086 DEBUG: Cipher: aes128-ctr
+2025-04-11 14:28:21,086 DEBUG: MAC: hmac-sha2-256
+2025-04-11 14:28:21,086 DEBUG: Compression: none
+2025-04-11 14:28:21,086 DEBUG: === End of kex handshake ===
+2025-04-11 14:28:21,152 DEBUG: Resetting outbound seqno after NEWKEYS due to strict mode
+2025-04-11 14:28:21,152 DEBUG: kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2025-04-11 14:28:21,154 DEBUG: Switch to new keys ...
+2025-04-11 14:28:21,154 DEBUG: Resetting inbound seqno after NEWKEYS due to strict mode
+2025-04-11 14:28:21,154 DEBUG: Adding ssh-ed25519 host key for [localhost]:2223: b'71eda3eb3f303a0501a7cb05e96c9ede'
+2025-04-11 14:28:21,155 DEBUG: Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com'}
+2025-04-11 14:28:21,201 DEBUG: userauth is OK
+2025-04-11 14:28:21,220 INFO: Authentication (password) successful!
+2025-04-11 14:28:21,220 INFO: SSH connection established to localhost:2223
+2025-04-11 14:28:21,220 DEBUG: [chan 0] Max packet in: 32768 bytes
+2025-04-11 14:28:21,230 DEBUG: Received global request "hostkeys-00@openssh.com"
+2025-04-11 14:28:21,230 DEBUG: Rejecting "hostkeys-00@openssh.com" global request from server.
+2025-04-11 14:28:21,281 DEBUG: [chan 0] Max packet out: 32768 bytes
+2025-04-11 14:28:21,281 DEBUG: Secsh channel 0 opened.
+2025-04-11 14:28:21,284 DEBUG: [chan 0] Sesch channel 0 request ok
+2025-04-11 14:28:31,291 DEBUG: [chan 0] EOF received (0)
+2025-04-11 14:28:31,291 DEBUG: SSH command executed, processing output
+2025-04-11 14:28:31,291 DEBUG: [chan 0] EOF sent (0)
+2025-04-11 14:28:31,291 INFO: Output from localhost:2223 -> Simulated shutdown: Node will restart in 10 seconds
+Node restarted
+2025-04-11 14:28:31,291 DEBUG: EOF in transport thread
+2025-04-11 14:28:31,299 DEBUG: SSH connection to localhost:2223 closed
+2025-04-11 14:28:31,299 INFO: Shutdown simulation completed for localhost:2223
+2025-04-11 14:28:31,309 INFO: Shutdown simulation output:
+Simulated shutdown: Node will restart in 10 seconds
+Node restarted
+
+2025-04-11 14:28:31,317 INFO: Waiting 15 seconds to simulate node downtime and dashboard update...
+2025-04-11 14:28:46,319 INFO: Resuming after simulated downtime
+2025-04-11 14:28:46,319 INFO: ==== PROCESSING IMAGE FOLDERS ====
+2025-04-11 14:28:46,319 INFO: Processing image folders in data
+2025-04-11 14:28:46,319 DEBUG: use_alt_raid6 parameter: True
+2025-04-11 14:28:46,319 DEBUG: Processing folder: data\train
+2025-04-11 14:28:46,344 INFO: Processing image 'data\train\IMG-20221027-WA0002_jpg.rf.ee8f211bc5de9e5656c2ec0b450e8d03.jpg' in folder 'train'
+2025-04-11 14:28:46,344 INFO: Starting failure simulation for image: data\train\IMG-20221027-WA0002_jpg.rf.ee8f211bc5de9e5656c2ec0b450e8d03.jpg
+2025-04-11 14:28:46,354 DEBUG: Parameters - failed_segment: R2, output_folder: output, use_alt_raid6: True
+2025-04-11 14:28:46,359 INFO: Processing image: data\train\IMG-20221027-WA0002_jpg.rf.ee8f211bc5de9e5656c2ec0b450e8d03.jpg
+2025-04-11 14:28:46,419 DEBUG: Original image dimensions: 640x640x3
+2025-04-11 14:28:46,419 DEBUG: Calculated segment width: 213
+2025-04-11 14:28:46,419 INFO: Successfully split image into three segments (width=213).
+2025-04-11 14:28:46,419 DEBUG: Segment shapes - R1: (640, 213, 3), R2: (640, 213, 3), R3: (640, 213, 3)
+2025-04-11 14:28:46,419 INFO: Computing parity data
+2025-04-11 14:28:46,419 DEBUG: Computing RAID5 parity (R1 + R2 + R3 mod 256)
+2025-04-11 14:28:46,439 DEBUG: Computing alternate RAID6 parity (R1 + R2 - R3 mod 256)
+2025-04-11 14:28:46,460 INFO: Selected recovery method: RAID6-alt (R1+R2-R3)
+2025-04-11 14:28:46,460 DEBUG: Simulating failure of segment R2
+2025-04-11 14:28:46,460 DEBUG: Available segments: (640, 213, 3), (640, 213, 3)
+2025-04-11 14:28:46,460 DEBUG: Using alternate RAID6 recovery formula
+2025-04-11 14:28:46,472 INFO: Successfully recovered missing segment R2 using RAID6-alt (R1+R2-R3)
+2025-04-11 14:28:46,480 DEBUG: Reconstructed image shape: (640, 639, 3)
+2025-04-11 14:28:46,519 INFO: Successfully saved reconstructed image to 'output\recovered_IMG-20221027-WA0002_jpg.rf.ee8f211bc5de9e5656c2ec0b450e8d03.jpg'
+2025-04-11 14:28:46,519 DEBUG: Processing folder: data\test
+2025-04-11 14:28:46,552 INFO: Processing image 'data\test\IMG-20221027-WA0001_jpg.rf.0b3ddb492c8d06e68d261d227960f77e.jpg' in folder 'test'
+2025-04-11 14:28:46,552 INFO: Starting failure simulation for image: data\test\IMG-20221027-WA0001_jpg.rf.0b3ddb492c8d06e68d261d227960f77e.jpg
+2025-04-11 14:28:46,552 DEBUG: Parameters - failed_segment: R2, output_folder: output, use_alt_raid6: True
+2025-04-11 14:28:46,552 INFO: Processing image: data\test\IMG-20221027-WA0001_jpg.rf.0b3ddb492c8d06e68d261d227960f77e.jpg
+2025-04-11 14:28:46,552 DEBUG: Original image dimensions: 640x640x3
+2025-04-11 14:28:46,552 DEBUG: Calculated segment width: 213
+2025-04-11 14:28:46,552 INFO: Successfully split image into three segments (width=213).
+2025-04-11 14:28:46,552 DEBUG: Segment shapes - R1: (640, 213, 3), R2: (640, 213, 3), R3: (640, 213, 3)
+2025-04-11 14:28:46,552 INFO: Computing parity data
+2025-04-11 14:28:46,552 DEBUG: Computing RAID5 parity (R1 + R2 + R3 mod 256)
+2025-04-11 14:28:46,569 DEBUG: Computing alternate RAID6 parity (R1 + R2 - R3 mod 256)
+2025-04-11 14:28:46,586 INFO: Selected recovery method: RAID6-alt (R1+R2-R3)
+2025-04-11 14:28:46,587 DEBUG: Simulating failure of segment R2
+2025-04-11 14:28:46,587 DEBUG: Available segments: (640, 213, 3), (640, 213, 3)
+2025-04-11 14:28:46,587 DEBUG: Using alternate RAID6 recovery formula
+2025-04-11 14:28:46,595 INFO: Successfully recovered missing segment R2 using RAID6-alt (R1+R2-R3)
+2025-04-11 14:28:46,595 DEBUG: Reconstructed image shape: (640, 639, 3)
+2025-04-11 14:28:46,621 INFO: Successfully saved reconstructed image to 'output\recovered_IMG-20221027-WA0001_jpg.rf.0b3ddb492c8d06e68d261d227960f77e.jpg'
+2025-04-11 14:28:46,621 DEBUG: Processing folder: data\valid
+2025-04-11 14:28:46,630 INFO: Processing image 'data\valid\IMG-20221027-WA0000_jpg.rf.8d1820185d4e1c170511cef3bd2a0a4f.jpg' in folder 'valid'
+2025-04-11 14:28:46,630 INFO: Starting failure simulation for image: data\valid\IMG-20221027-WA0000_jpg.rf.8d1820185d4e1c170511cef3bd2a0a4f.jpg
+2025-04-11 14:28:46,630 DEBUG: Parameters - failed_segment: R2, output_folder: output, use_alt_raid6: True
+2025-04-11 14:28:46,630 INFO: Processing image: data\valid\IMG-20221027-WA0000_jpg.rf.8d1820185d4e1c170511cef3bd2a0a4f.jpg
+2025-04-11 14:28:46,636 DEBUG: Original image dimensions: 640x640x3
+2025-04-11 14:28:46,636 DEBUG: Calculated segment width: 213
+2025-04-11 14:28:46,636 INFO: Successfully split image into three segments (width=213).
+2025-04-11 14:28:46,636 DEBUG: Segment shapes - R1: (640, 213, 3), R2: (640, 213, 3), R3: (640, 213, 3)
+2025-04-11 14:28:46,636 INFO: Computing parity data
+2025-04-11 14:28:46,636 DEBUG: Computing RAID5 parity (R1 + R2 + R3 mod 256)
+2025-04-11 14:28:46,657 DEBUG: Computing alternate RAID6 parity (R1 + R2 - R3 mod 256)
+2025-04-11 14:28:46,668 INFO: Selected recovery method: RAID6-alt (R1+R2-R3)
+2025-04-11 14:28:46,669 DEBUG: Simulating failure of segment R2
+2025-04-11 14:28:46,669 DEBUG: Available segments: (640, 213, 3), (640, 213, 3)
+2025-04-11 14:28:46,669 DEBUG: Using alternate RAID6 recovery formula
+2025-04-11 14:28:46,669 INFO: Successfully recovered missing segment R2 using RAID6-alt (R1+R2-R3)
+2025-04-11 14:28:46,669 DEBUG: Reconstructed image shape: (640, 639, 3)
+2025-04-11 14:28:46,704 INFO: Successfully saved reconstructed image to 'output\recovered_IMG-20221027-WA0000_jpg.rf.8d1820185d4e1c170511cef3bd2a0a4f.jpg'
+2025-04-11 14:28:46,704 INFO: ==== Application completed successfully ====
+2025-04-16 21:41:40,236 INFO: Logging system initialized with console and file handlers
+2025-04-16 21:41:40,237 INFO: ==== Starting application ====
+2025-04-16 21:41:40,237 INFO: ==== SIMULATING NODE SHUTDOWN ====
+2025-04-16 21:41:40,238 INFO: Initiating simulated shutdown for node localhost:2223
+2025-04-16 21:41:40,238 DEBUG: Executing shutdown simulation command: echo 'Simulated shutdown: Node will restart in 10 seconds'; sleep 10; echo 'Node restarted'
+2025-04-16 21:41:40,238 DEBUG: Attempting SSH connection to localhost:2223 with command: echo 'Simulated shutdown: Node will restart in 10 seconds'; sleep 10; echo 'Node restarted'
+2025-04-16 21:41:40,239 DEBUG: Connecting to localhost:2223 as root
+2025-04-16 21:41:44,323 ERROR: Unexpected error connecting to localhost:2223: [Errno None] Unable to connect to port 2223 on 127.0.0.1 or ::1
+2025-04-16 21:41:44,324 ERROR: Shutdown simulation failed for localhost:2223
+2025-04-16 21:41:44,325 WARNING: No output received from shutdown simulation
+2025-04-16 21:41:44,325 INFO: Waiting 15 seconds to simulate node downtime and dashboard update...
+2025-04-16 21:41:59,335 INFO: Resuming after simulated downtime
+2025-04-16 21:41:59,335 INFO: ==== PROCESSING IMAGE FOLDERS ====
+2025-04-16 21:41:59,335 INFO: Processing image folders in data
+2025-04-16 21:41:59,335 DEBUG: use_alt_raid6 parameter: True
+2025-04-16 21:41:59,335 DEBUG: Processing folder: data\train
+2025-04-16 21:41:59,335 INFO: Processing image 'data\train\IMG-20221027-WA0002_jpg.rf.ee8f211bc5de9e5656c2ec0b450e8d03.jpg' in folder 'train'
+2025-04-16 21:41:59,335 INFO: Starting failure simulation for image: data\train\IMG-20221027-WA0002_jpg.rf.ee8f211bc5de9e5656c2ec0b450e8d03.jpg
+2025-04-16 21:41:59,346 DEBUG: Parameters - failed_segment: R2, output_folder: output, use_alt_raid6: True
+2025-04-16 21:41:59,346 INFO: Processing image: data\train\IMG-20221027-WA0002_jpg.rf.ee8f211bc5de9e5656c2ec0b450e8d03.jpg
+2025-04-16 21:41:59,407 DEBUG: Original image dimensions: 640x640x3
+2025-04-16 21:41:59,407 DEBUG: Calculated segment width: 213
+2025-04-16 21:41:59,407 INFO: Successfully split image into three segments (width=213).
+2025-04-16 21:41:59,408 DEBUG: Segment shapes - R1: (640, 213, 3), R2: (640, 213, 3), R3: (640, 213, 3)
+2025-04-16 21:41:59,408 INFO: Computing parity data
+2025-04-16 21:41:59,408 DEBUG: Computing RAID5 parity (R1 + R2 + R3 mod 256)
+2025-04-16 21:41:59,415 DEBUG: Computing alternate RAID6 parity (R1 + R2 - R3 mod 256)
+2025-04-16 21:41:59,423 INFO: Selected recovery method: RAID6-alt (R1+R2-R3)
+2025-04-16 21:41:59,424 DEBUG: Simulating failure of segment R2
+2025-04-16 21:41:59,424 DEBUG: Available segments: (640, 213, 3), (640, 213, 3)
+2025-04-16 21:41:59,424 DEBUG: Using alternate RAID6 recovery formula
+2025-04-16 21:41:59,431 INFO: Successfully recovered missing segment R2 using RAID6-alt (R1+R2-R3)
+2025-04-16 21:41:59,432 DEBUG: Reconstructed image shape: (640, 639, 3)
+2025-04-16 21:41:59,461 INFO: Successfully saved reconstructed image to 'output\recovered_IMG-20221027-WA0002_jpg.rf.ee8f211bc5de9e5656c2ec0b450e8d03.jpg'
+2025-04-16 21:41:59,462 DEBUG: Processing folder: data\test
+2025-04-16 21:41:59,473 INFO: Processing image 'data\test\IMG-20221027-WA0001_jpg.rf.0b3ddb492c8d06e68d261d227960f77e.jpg' in folder 'test'
+2025-04-16 21:41:59,473 INFO: Starting failure simulation for image: data\test\IMG-20221027-WA0001_jpg.rf.0b3ddb492c8d06e68d261d227960f77e.jpg
+2025-04-16 21:41:59,476 DEBUG: Parameters - failed_segment: R2, output_folder: output, use_alt_raid6: True
+2025-04-16 21:41:59,476 INFO: Processing image: data\test\IMG-20221027-WA0001_jpg.rf.0b3ddb492c8d06e68d261d227960f77e.jpg
+2025-04-16 21:41:59,482 DEBUG: Original image dimensions: 640x640x3
+2025-04-16 21:41:59,482 DEBUG: Calculated segment width: 213
+2025-04-16 21:41:59,482 INFO: Successfully split image into three segments (width=213).
+2025-04-16 21:41:59,483 DEBUG: Segment shapes - R1: (640, 213, 3), R2: (640, 213, 3), R3: (640, 213, 3)
+2025-04-16 21:41:59,483 INFO: Computing parity data
+2025-04-16 21:41:59,484 DEBUG: Computing RAID5 parity (R1 + R2 + R3 mod 256)
+2025-04-16 21:41:59,491 DEBUG: Computing alternate RAID6 parity (R1 + R2 - R3 mod 256)
+2025-04-16 21:41:59,500 INFO: Selected recovery method: RAID6-alt (R1+R2-R3)
+2025-04-16 21:41:59,500 DEBUG: Simulating failure of segment R2
+2025-04-16 21:41:59,500 DEBUG: Available segments: (640, 213, 3), (640, 213, 3)
+2025-04-16 21:41:59,500 DEBUG: Using alternate RAID6 recovery formula
+2025-04-16 21:41:59,509 INFO: Successfully recovered missing segment R2 using RAID6-alt (R1+R2-R3)
+2025-04-16 21:41:59,511 DEBUG: Reconstructed image shape: (640, 639, 3)
+2025-04-16 21:41:59,532 INFO: Successfully saved reconstructed image to 'output\recovered_IMG-20221027-WA0001_jpg.rf.0b3ddb492c8d06e68d261d227960f77e.jpg'
+2025-04-16 21:41:59,533 DEBUG: Processing folder: data\valid
+2025-04-16 21:41:59,533 INFO: Processing image 'data\valid\IMG-20221027-WA0000_jpg.rf.8d1820185d4e1c170511cef3bd2a0a4f.jpg' in folder 'valid'
+2025-04-16 21:41:59,535 INFO: Starting failure simulation for image: data\valid\IMG-20221027-WA0000_jpg.rf.8d1820185d4e1c170511cef3bd2a0a4f.jpg
+2025-04-16 21:41:59,535 DEBUG: Parameters - failed_segment: R2, output_folder: output, use_alt_raid6: True
+2025-04-16 21:41:59,535 INFO: Processing image: data\valid\IMG-20221027-WA0000_jpg.rf.8d1820185d4e1c170511cef3bd2a0a4f.jpg
+2025-04-16 21:41:59,546 DEBUG: Original image dimensions: 640x640x3
+2025-04-16 21:41:59,548 DEBUG: Calculated segment width: 213
+2025-04-16 21:41:59,549 INFO: Successfully split image into three segments (width=213).
+2025-04-16 21:41:59,549 DEBUG: Segment shapes - R1: (640, 213, 3), R2: (640, 213, 3), R3: (640, 213, 3)
+2025-04-16 21:41:59,549 INFO: Computing parity data
+2025-04-16 21:41:59,549 DEBUG: Computing RAID5 parity (R1 + R2 + R3 mod 256)
+2025-04-16 21:41:59,556 DEBUG: Computing alternate RAID6 parity (R1 + R2 - R3 mod 256)
+2025-04-16 21:41:59,563 INFO: Selected recovery method: RAID6-alt (R1+R2-R3)
+2025-04-16 21:41:59,564 DEBUG: Simulating failure of segment R2
+2025-04-16 21:41:59,564 DEBUG: Available segments: (640, 213, 3), (640, 213, 3)
+2025-04-16 21:41:59,564 DEBUG: Using alternate RAID6 recovery formula
+2025-04-16 21:41:59,567 INFO: Successfully recovered missing segment R2 using RAID6-alt (R1+R2-R3)
+2025-04-16 21:41:59,572 DEBUG: Reconstructed image shape: (640, 639, 3)
+2025-04-16 21:41:59,595 INFO: Successfully saved reconstructed image to 'output\recovered_IMG-20221027-WA0000_jpg.rf.8d1820185d4e1c170511cef3bd2a0a4f.jpg'
+2025-04-16 21:41:59,595 INFO: ==== Application completed successfully ====
+2025-04-16 21:45:01,058 INFO: Logging system initialized with console and file handlers
+2025-04-16 21:45:01,059 INFO: ==== Starting application ====
+2025-04-16 21:45:01,059 INFO: ==== SIMULATING NODE SHUTDOWN ====
+2025-04-16 21:45:01,060 INFO: Initiating simulated shutdown for node localhost:2223
+2025-04-16 21:45:01,061 DEBUG: Executing shutdown simulation command: echo 'Simulated shutdown: Node will restart in 10 seconds'; sleep 10; echo 'Node restarted'
+2025-04-16 21:45:01,061 DEBUG: Attempting SSH connection to localhost:2223 with command: echo 'Simulated shutdown: Node will restart in 10 seconds'; sleep 10; echo 'Node restarted'
+2025-04-16 21:45:01,061 DEBUG: Connecting to localhost:2223 as root
+2025-04-16 21:45:05,164 ERROR: Unexpected error connecting to localhost:2223: [Errno None] Unable to connect to port 2223 on 127.0.0.1 or ::1
+2025-04-16 21:45:05,164 ERROR: Shutdown simulation failed for localhost:2223
+2025-04-16 21:45:05,164 WARNING: No output received from shutdown simulation
+2025-04-16 21:45:05,165 INFO: Waiting 15 seconds to simulate node downtime and dashboard update...
+2025-04-16 21:45:20,179 INFO: Resuming after simulated downtime
+2025-04-16 21:45:20,180 INFO: ==== PROCESSING IMAGE FOLDERS ====
+2025-04-16 21:45:20,181 INFO: Processing image folders in data
+2025-04-16 21:45:20,181 DEBUG: use_alt_raid6 parameter: True
+2025-04-16 21:45:20,181 DEBUG: Processing folder: data\train
+2025-04-16 21:45:20,186 INFO: Processing image 'data\train\IMG-20221027-WA0002_jpg.rf.ee8f211bc5de9e5656c2ec0b450e8d03.jpg' in folder 'train'
+2025-04-16 21:45:20,187 INFO: Starting failure simulation for image: data\train\IMG-20221027-WA0002_jpg.rf.ee8f211bc5de9e5656c2ec0b450e8d03.jpg
+2025-04-16 21:45:20,188 DEBUG: Parameters - failed_segment: R2, output_folder: output, use_alt_raid6: True
+2025-04-16 21:45:20,189 INFO: Processing image: data\train\IMG-20221027-WA0002_jpg.rf.ee8f211bc5de9e5656c2ec0b450e8d03.jpg
+2025-04-16 21:45:20,227 DEBUG: Original image dimensions: 640x640x3
+2025-04-16 21:45:20,227 DEBUG: Calculated segment width: 213
+2025-04-16 21:45:20,228 INFO: Successfully split image into three segments (width=213).
+2025-04-16 21:45:20,228 DEBUG: Segment shapes - R1: (640, 213, 3), R2: (640, 213, 3), R3: (640, 213, 3)
+2025-04-16 21:45:20,228 INFO: Computing parity data
+2025-04-16 21:45:20,230 DEBUG: Computing RAID5 parity (R1 + R2 + R3 mod 256)
+2025-04-16 21:45:20,241 DEBUG: Computing alternate RAID6 parity (R1 + R2 - R3 mod 256)
+2025-04-16 21:45:20,252 INFO: Selected recovery method: RAID6-alt (R1+R2-R3)
+2025-04-16 21:45:20,253 DEBUG: Simulating failure of segment R2
+2025-04-16 21:45:20,253 DEBUG: Available segments: (640, 213, 3), (640, 213, 3)
+2025-04-16 21:45:20,253 DEBUG: Using alternate RAID6 recovery formula
+2025-04-16 21:45:20,261 INFO: Successfully recovered missing segment R2 using RAID6-alt (R1+R2-R3)
+2025-04-16 21:45:20,269 DEBUG: Reconstructed image shape: (640, 639, 3)
+2025-04-16 21:45:20,308 INFO: Successfully saved reconstructed image to 'output\recovered_IMG-20221027-WA0002_jpg.rf.ee8f211bc5de9e5656c2ec0b450e8d03.jpg'
+2025-04-16 21:45:20,311 DEBUG: Processing folder: data\test
+2025-04-16 21:45:20,332 INFO: Processing image 'data\test\IMG-20221027-WA0001_jpg.rf.0b3ddb492c8d06e68d261d227960f77e.jpg' in folder 'test'
+2025-04-16 21:45:20,333 INFO: Starting failure simulation for image: data\test\IMG-20221027-WA0001_jpg.rf.0b3ddb492c8d06e68d261d227960f77e.jpg
+2025-04-16 21:45:20,336 DEBUG: Parameters - failed_segment: R2, output_folder: output, use_alt_raid6: True
+2025-04-16 21:45:20,337 INFO: Processing image: data\test\IMG-20221027-WA0001_jpg.rf.0b3ddb492c8d06e68d261d227960f77e.jpg
+2025-04-16 21:45:20,352 DEBUG: Original image dimensions: 640x640x3
+2025-04-16 21:45:20,352 DEBUG: Calculated segment width: 213
+2025-04-16 21:45:20,352 INFO: Successfully split image into three segments (width=213).
+2025-04-16 21:45:20,353 DEBUG: Segment shapes - R1: (640, 213, 3), R2: (640, 213, 3), R3: (640, 213, 3)
+2025-04-16 21:45:20,353 INFO: Computing parity data
+2025-04-16 21:45:20,354 DEBUG: Computing RAID5 parity (R1 + R2 + R3 mod 256)
+2025-04-16 21:45:20,362 DEBUG: Computing alternate RAID6 parity (R1 + R2 - R3 mod 256)
+2025-04-16 21:45:20,378 INFO: Selected recovery method: RAID6-alt (R1+R2-R3)
+2025-04-16 21:45:20,382 DEBUG: Simulating failure of segment R2
+2025-04-16 21:45:20,383 DEBUG: Available segments: (640, 213, 3), (640, 213, 3)
+2025-04-16 21:45:20,383 DEBUG: Using alternate RAID6 recovery formula
+2025-04-16 21:45:20,391 INFO: Successfully recovered missing segment R2 using RAID6-alt (R1+R2-R3)
+2025-04-16 21:45:20,393 DEBUG: Reconstructed image shape: (640, 639, 3)
+2025-04-16 21:45:20,427 INFO: Successfully saved reconstructed image to 'output\recovered_IMG-20221027-WA0001_jpg.rf.0b3ddb492c8d06e68d261d227960f77e.jpg'
+2025-04-16 21:45:20,429 DEBUG: Processing folder: data\valid
+2025-04-16 21:45:20,433 INFO: Processing image 'data\valid\IMG-20221027-WA0000_jpg.rf.8d1820185d4e1c170511cef3bd2a0a4f.jpg' in folder 'valid'
+2025-04-16 21:45:20,435 INFO: Starting failure simulation for image: data\valid\IMG-20221027-WA0000_jpg.rf.8d1820185d4e1c170511cef3bd2a0a4f.jpg
+2025-04-16 21:45:20,437 DEBUG: Parameters - failed_segment: R2, output_folder: output, use_alt_raid6: True
+2025-04-16 21:45:20,438 INFO: Processing image: data\valid\IMG-20221027-WA0000_jpg.rf.8d1820185d4e1c170511cef3bd2a0a4f.jpg
+2025-04-16 21:45:20,455 DEBUG: Original image dimensions: 640x640x3
+2025-04-16 21:45:20,456 DEBUG: Calculated segment width: 213
+2025-04-16 21:45:20,456 INFO: Successfully split image into three segments (width=213).
+2025-04-16 21:45:20,456 DEBUG: Segment shapes - R1: (640, 213, 3), R2: (640, 213, 3), R3: (640, 213, 3)
+2025-04-16 21:45:20,457 INFO: Computing parity data
+2025-04-16 21:45:20,457 DEBUG: Computing RAID5 parity (R1 + R2 + R3 mod 256)
+2025-04-16 21:45:20,495 DEBUG: Computing alternate RAID6 parity (R1 + R2 - R3 mod 256)
+2025-04-16 21:45:20,509 INFO: Selected recovery method: RAID6-alt (R1+R2-R3)
+2025-04-16 21:45:20,511 DEBUG: Simulating failure of segment R2
+2025-04-16 21:45:20,511 DEBUG: Available segments: (640, 213, 3), (640, 213, 3)
+2025-04-16 21:45:20,512 DEBUG: Using alternate RAID6 recovery formula
+2025-04-16 21:45:20,528 INFO: Successfully recovered missing segment R2 using RAID6-alt (R1+R2-R3)
+2025-04-16 21:45:20,531 DEBUG: Reconstructed image shape: (640, 639, 3)
+2025-04-16 21:45:20,575 INFO: Successfully saved reconstructed image to 'output\recovered_IMG-20221027-WA0000_jpg.rf.8d1820185d4e1c170511cef3bd2a0a4f.jpg'
+2025-04-16 21:45:20,578 INFO: ==== Application completed successfully ====
